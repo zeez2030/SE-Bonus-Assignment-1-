@@ -9,6 +9,8 @@ body {
     position: relative;
     background: linear-gradient(to right, #fff, #076585);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    overflow-x: hidden;
+    transition: all 2s;
     
 }
 
@@ -101,3 +103,58 @@ form input:focus{
     
     
 }
+.secondpage{
+    
+    color:white;
+    border: 4px solid black;
+    height: 58rem;
+    background: black;
+    width: 70%;
+    transition: background 2s;
+    box-shadow: 2px 2px 2px black;
+}
+.titlesub{
+    padding: 0;
+    margin-top: 5rem;
+    padding-top: 3rem;
+  
+}
+.titlesub h1{
+    font-weight: 600;
+    padding: 1rem;
+    
+}
+.titlesub p{
+    font-style: italic;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.author{
+    position: relative;
+    top: 18rem;
+    padding: 1rem;
+}
+.author h1{
+    padding: 1rem 1rem 0 1rem;
+    font-weight: 500;
+}
+.author p{
+    font-weight: 700;
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+}
+.publish{
+     position: relative;
+    top: 20rem;
+   
+}
+.publish h1{
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    padding:0;
+}
+.publisher{
+    font-weight: 700;
+    margin-top: 0;
+    padding: 0;
+} 

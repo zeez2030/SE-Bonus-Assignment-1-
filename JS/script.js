@@ -9,6 +9,8 @@ const validate = function (title, sub, name, pub, year) {
         return false;
 
 };
+ let secondpage = document.querySelector('.secondpage');
+    secondpage.style.visibility="hidden";
 submit.addEventListener('click', function (e) {
         
     
@@ -21,9 +23,24 @@ submit.addEventListener('click', function (e) {
     if (validate(title, sub, name, pub, year)) {
 
        let firstpage= document.querySelector('.firstpage');
-        firstpage.style.visibility='hidden';
+        firstpage.innerHTML=" ";
+        
        let body= document.querySelector('body');
-        body.style.background=color;
+        secondpage.style.background=color;
+        body.style.background='#ddd'
+        let titleh = document.querySelector('.title');
+        let publisher= document.querySelector('.publisher');
+        
+        publisher.textContent=pub;
+        
+        let y= document.querySelector('.year');
+        y.textContent=year;
+        let subtitle= document.querySelector('.subtitle');
+       secondpage.style.visibility="visible"; 
+        titleh.textContent=title;
+        subtitle.textContent=sub;
+        let author = document.querySelector('.author p');
+        author.textContent=name;
     } else
         alert("check inputs");
 
